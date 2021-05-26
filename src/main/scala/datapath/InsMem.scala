@@ -11,5 +11,5 @@ class InsMem extends Module{
 
 	val mem = Mem(1024, UInt(32.W))
 	io.rData := mem(io.wrAdder)
-	loadMemoryFromFile(mem, "/home/hellcaster/Instruction.txt")
+	loadMemoryFromFile(mem, "/home/kraken/Desktop/Instruction.txt")
 }

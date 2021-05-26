@@ -11,5 +11,5 @@ class channelABundle extends Bundle with Config {
     val a_address = UInt(a.W)
     val a_mask = UInt(w.W)
     val a_corrupt = UInt(1.W)
-    val a_data = UInt((8*w).W)
+    val a_data = SInt((8*w).W)
 }

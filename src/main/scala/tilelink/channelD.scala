@@ -11,5 +11,6 @@ class channelDBundle extends Bundle with Config {
     val d_sink = UInt(i.W)  
     val d_denied = UInt(1.W)
     val d_corrupt = UInt(1.W)
-    val d_data = UInt((8*w).W)
+    val d_data = SInt((8*w).W)
+    val d_addr = UInt(10.W)
 }
